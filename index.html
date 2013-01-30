@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+
+	<title>Photos of MachBio</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/supersized.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+	<script type "text/javascript" src="js/flickrapi.js"></script>
+	<style type="text/css">
+			p{ padding:0 30px 30px 30px; color:#fff; font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; text-shadow: #000 0px 1px 0px; line-height:200%; }
+				p a{ font-size:10pt; text-decoration:none; outline: none; color:#ddd; background:#222; border-top:1px solid #333; padding:5px 8px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; -moz-box-shadow: 0px 1px 1px #000; -webkit-box-shadow: 0px 1px 1px #000; box-shadow: 0px 1px 1px #000; }
+					p a:hover{ background-color:#427cb4; border-color:#5c94cb; color:#fff; }
+			h3{ padding:30px 30px 20px 30px; }
+			
+			#content{ position:absolute; top:50px; left:50px; background:#111; background:rgba(0,0,0,0.65); width:360px; text-align:left; }
+			.stamp{ float: right; margin: 15px 30px 0 0;}
+			
+	</style>
+
+   <style>
+                body{
+                        background:#e8f6ff no-repeat top left;
+                        font-family:Arial,Helvetica,sans-serif;
+                }
+        span.reference{
+            position:fixed;
+            right:20px;
+            top:10px;
+            font-size:10px;
+                        text-transform:uppercase;
+        }
+        span.reference a{
+            color:#aaa;
+                        text-decoration:none;
+                        text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a:hover{
+            color:#000;
+        }
+                .content{
+                        margin: 100px auto 0px auto;
+                        background-color:#3d3d3d;
+                        color:#fff;
+                        text-transform:uppercase;
+                        font-size:10px;
+                        border:1px solid #222;
+                        padding:30px;
+                        -moz-box-shadow:0px 0px 8px #444;
+                        -webkit-box-shadow:0px 0px 8px #444;
+                        box-shadow:0px 0px 8px #444;
+                        -moz-border-radius:10px;
+                        -webkit-border-radius:10px;
+                        border-radius:10px;
+                        text-shadow:1px 1px 1px #000;
+                        opacity:0.9;
+                }
+                .content a{
+                        color:#ddd;
+                        font-weight:bold;
+                        text-decoration:none;
+                }
+                .content a:hover{
+                        color:#fff;
+                }
+                .content h2{
+                        font-weight:normal;
+                        text-shadow:0px 0px 1px #777;
+                }
+                .arrow{
+                        width:311px;
+                        height:200px;
+                        position:fixed;
+                        bottom:10px;
+                        left:100px;
+                        background:transparent url(arrow.png) no-repeat top left;
+                }
+    </style>
+
+	
+</head>
+
+<body>
+
+<div id="content">
+</div>
+	
+<div id="slidecounter">
+<span class="slidenumber"></span>/<span class="totalslides"></span>
+</div>
+<div id="slidecaption"></div>
+<div id="navigation">
+<img id="prevslide" src="img/back_dull.png"/><img id="pauseplay" src="img/pause_dull.png"/><img id="nextslide" src="img/forward_dull.png"/>
+</div>
+
+
+                        <div id="flickr_photopreview" class="photopreview" style="display:none;">
+                                <div class="preview_wrapper">
+                                        <div class="preview">
+                                                <div class="loading"></div>
+                                                <div id="preview_close" class="close"></div>
+                                                <span id="large_phototitle"></span>
+                                                <!--image-->
+                                                <a href="#" id="preview_img_next" class="img_next"></a>
+                                                <a href="#" id="preview_img_prev" class="img_prev"></a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="photobar" class="photobar">
+                                <div class="thumbs albums" id="sets">
+                                        <a href="#" class="prev"></a>
+                                        <div class="thumbsWrapper">
+                                                <ul></ul>
+                                        </div>
+                                        <a href="#" class="next"></a>
+                                </div>
+                                <div class="thumbs images" id="images" style="bottom:-125px;">
+                                        <a href="#" class="prev"></a>
+                                        <div class="thumbsWrapper">
+                                                <ul></ul>
+                                        </div>
+                                        <a href="#" class="next"></a>
+                                        <span class="images_toggle">
+                                                Set:
+                                                <span id="setName"></span>
+                                                <a id="images_toggle">Back to Sets</a>
+                                        </span>
+                                </div>
+
+                               <a id="flickr_toggle" class="toggle">
+                                    Photos of MachBio
+                                        <span style="visibility:hidden;" class="loading_small"></span>
+                                </a>
+                        </div>
+
+
+                <script src="js/viewport.js" type="text/javascript"></script>
+        <script src="js/flickrphoto.js" type="text/javascript"></script>
+
+
+</body>
+</html>
